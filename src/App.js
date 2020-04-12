@@ -33,7 +33,7 @@ function App() {
           </div>
           <form onSubmit={handleSubmit}>
             <div className="form-group">
-              <label htmlFor="population">Population</label>
+              <label for="population">Population</label>
               <input
                 type="number"
                 name="population"
@@ -46,7 +46,7 @@ function App() {
               />
             </div>
             <div className="form-group">
-              <label htmlFor="timeToElapse">Elapse Time</label>
+              <label for="timeToElapse">Elapse Time</label>
               <input
                 type="number"
                 name="timeToElapse"
@@ -59,7 +59,7 @@ function App() {
               />
             </div>
             <div className="form-group">
-              <label htmlFor="population">Reported Cases</label>
+              <label for="population">Reported Cases</label>
               <input
                 type="number"
                 name="reportedCases"
@@ -72,7 +72,7 @@ function App() {
               />
             </div>
             <div className="form-group">
-              <label htmlFor="population">Total Hospital Beds</label>
+              <label for="population">Total Hospital Beds</label>
               <input
                 type="number"
                 name="totalHospitalBeds"
@@ -85,7 +85,7 @@ function App() {
               />
             </div>
             <div className="form-group">
-              <label htmlFor="population">Select Period Type</label>
+              <label for="population">Select Period Type</label>
               <select
                 id="inputState"
                 className="form-control"
