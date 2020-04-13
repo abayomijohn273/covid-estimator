@@ -3,14 +3,18 @@
   padding: 0;
   background-color: #13349e;
 }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 h3 {
   color: #f89827;
   font-weight: bold;
 }
-.form-frame {
-  align-items: center;
-  background-color: #021a66;
-}
+
 .form-control {
   height: calc(2.5rem + 2px);
   padding: 0.375rem 0.75rem;
@@ -22,7 +26,6 @@ h3 {
   border: none;
   border-bottom: 3px solid #f89827;
   border-radius: 0rem;
-  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 label {
   color: white;
@@ -34,6 +37,7 @@ input[type='number']:focus {
   color: #f89827;
   border: none;
   border-bottom: 3px solid #f89827;
+  box-shadow: none;
 }
 input::placeholder {
   color: rgb(211, 211, 211) !important;
@@ -46,4 +50,6 @@ input::placeholder {
 select:focus {
   background: none !important;
   color: #f89827 !important;
+  border-bottom: 3px solid #f89827 !important;
+  box-shadow: none !important;
 }
