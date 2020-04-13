@@ -87,7 +87,7 @@ function App() {
             <div className="form-group">
               <label for="data-period-type">Select Period Type</label>
               <select
-                id="inputState"
+                id="data-period-type"
                 className="form-control"
                 name="periodType"
                 value={periodType}
@@ -103,6 +103,7 @@ function App() {
             <button
               type="submit"
               className="btn btn-primary"
+              id="data-go-estimate"
               aria-labelledby="data-go-estimate"
             >
               Submit Data
