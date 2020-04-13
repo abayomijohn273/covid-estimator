@@ -54,3 +54,6 @@ select:focus {
   border-bottom: 3px solid #f89827 !important;
   box-shadow: none !important;
 }
+.covid-img {
+  width: 100%;
+}
