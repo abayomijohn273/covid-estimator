@@ -104,6 +104,14 @@ function App() {
                     <option value="months">Months</option>
                   </select>
                 </div>
+                <button
+                  type="submit"
+                  className="btn btn-lg mb-4"
+                  id="data-go-estimate"
+                  aria-labelledby="data-go-estimate"
+                >
+                  Submit Data
+                </button>
               </form>
             </div>
           </div>
