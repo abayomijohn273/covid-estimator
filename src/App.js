@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
-import CovidImg from './assets/image.png';
+import CovidImg from './assets/image.webp';
 function App() {
   const [population, setPopulation] = useState('');
   const [timeToElapse, setTimeToElapse] = useState('');
