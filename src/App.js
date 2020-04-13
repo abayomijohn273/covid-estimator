@@ -105,7 +105,7 @@ function App() {
               </div>
               <button
                 type="submit"
-                className="btn btn-md btn-success mb-4"
+                className="btn btn-lg mb-4"
                 id="data-go-estimate"
                 aria-labelledby="data-go-estimate"
               >

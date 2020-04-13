@@ -45,9 +45,8 @@ input::placeholder {
 .btn,
 .btn:hover {
   color: white;
-  font-size: 18px;
-  background: #e27901;
-  border: #e27901;
+  background: #c56900;
+  border: #c56900;
 }
 select:focus {
   background: none !important;
