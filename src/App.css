@@ -57,3 +57,9 @@ select:focus {
 .covid-img {
   width: 100%;
 }
+
+@media screen and (max-width: 768px) {
+  .hidden-sm {
+    display: none;
+  }
+}

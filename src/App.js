@@ -115,7 +115,7 @@ function App() {
               </form>
             </div>
           </div>
-          <div className="col-lg-6 col-md-6 hidden-sm hidden-xs center m-auto">
+          <div className="col-lg-6 col-md-6 hidden-sm  center m-auto">
             <img
               class="img-responsive covid-img"
               src={CovidImg}
