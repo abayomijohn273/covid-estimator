@@ -33,7 +33,7 @@ function App() {
           </div>
           <form onSubmit={handleSubmit}>
             <div className="form-group">
-              <label for="population">Population</label>
+              <label for="data-population">Population</label>
               <input
                 type="number"
                 name="population"
@@ -41,12 +41,12 @@ function App() {
                 onChange={e => setPopulation(e.target.value)}
                 className="form-control"
                 id="data-population"
-                aria-describedby="data-population"
+                aria-labelledby="data-population"
                 placeholder="Enter Population"
               />
             </div>
             <div className="form-group">
-              <label for="timeToElapse">Elapse Time</label>
+              <label for="data-time-to-elapse">Elapse Time</label>
               <input
                 type="number"
                 name="timeToElapse"
@@ -54,12 +54,12 @@ function App() {
                 onChange={e => setTimeToElapse(e.target.value)}
                 className="form-control"
                 id="data-time-to-elapse"
-                aria-describedby="data-time-to-elapse"
+                aria-labelledby="data-time-to-elapse"
                 placeholder="Enter Time to elapse"
               />
             </div>
             <div className="form-group">
-              <label for="population">Reported Cases</label>
+              <label for="data-reported-cases">Reported Cases</label>
               <input
                 type="number"
                 name="reportedCases"
@@ -67,12 +67,12 @@ function App() {
                 onChange={e => setReportedCases(e.target.value)}
                 className="form-control"
                 id="data-reported-cases"
-                aria-describedby="data-reported-cases"
+                aria-labelledby="data-reported-cases"
                 placeholder="Enter No of Reported Cases"
               />
             </div>
             <div className="form-group">
-              <label for="population">Total Hospital Beds</label>
+              <label for="data-total-hospital-beds">Total Hospital Beds</label>
               <input
                 type="number"
                 name="totalHospitalBeds"
@@ -80,19 +80,19 @@ function App() {
                 onChange={e => setTotalHospitalBeds(e.target.value)}
                 className="form-control"
                 id="data-total-hospital-beds"
-                aria-describedby="data-total-hospital-beds"
+                aria-labelledby="data-total-hospital-beds"
                 placeholder="Enter No of Total Hospital Bed"
               />
             </div>
             <div className="form-group">
-              <label for="population">Select Period Type</label>
+              <label for="data-period-type">Select Period Type</label>
               <select
                 id="inputState"
                 className="form-control"
                 name="periodType"
                 value={periodType}
                 onChange={e => setPeriodType(e.target.value)}
-                aria-describedby="data-period-type"
+                aria-labelledby="data-period-type"
               >
                 <option>Choose...</option>
                 <option value="days">Days</option>
@@ -103,7 +103,7 @@ function App() {
             <button
               type="submit"
               className="btn btn-primary"
-              aria-describedby="data-go-estimate"
+              aria-labelledby="data-go-estimate"
             >
               Submit Data
             </button>
