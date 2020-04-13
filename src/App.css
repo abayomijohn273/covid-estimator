@@ -42,12 +42,6 @@ input[type='number']:focus {
 input::placeholder {
   color: rgb(211, 211, 211) !important;
 }
-.btn,
-.btn:hover {
-  color: white;
-  background: #c56900;
-  border: #c56900;
-}
 select:focus {
   background: none !important;
   color: #f89827 !important;
