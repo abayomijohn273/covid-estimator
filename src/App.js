@@ -25,90 +25,94 @@ function App() {
     console.log(data);
   };
   return (
-    <div className="row">
+    <div className="main">
       <div className="container">
-        <div className="col-md-6 col-md-8 col-sm-12">
-          <div className="number-left my-4">
-            <h3 className="bold">Covid19 Estimator</h3>
+        <div className="col-lg-6 col-md-6 col-sm-12">
+          <div className="number-left mt-4 mb-5">
+            <h3>Covid19 Estimator</h3>
           </div>
-          <form onSubmit={handleSubmit}>
-            <div className="form-group">
-              <label for="data-population">Population</label>
-              <input
-                type="number"
-                name="population"
-                value={population}
-                onChange={e => setPopulation(e.target.value)}
-                className="form-control"
-                id="data-population"
-                aria-labelledby="data-population"
-                placeholder="Enter Population"
-              />
-            </div>
-            <div className="form-group">
-              <label for="data-time-to-elapse">Elapse Time</label>
-              <input
-                type="number"
-                name="timeToElapse"
-                value={timeToElapse}
-                onChange={e => setTimeToElapse(e.target.value)}
-                className="form-control"
-                id="data-time-to-elapse"
-                aria-labelledby="data-time-to-elapse"
-                placeholder="Enter Time to elapse"
-              />
-            </div>
-            <div className="form-group">
-              <label for="data-reported-cases">Reported Cases</label>
-              <input
-                type="number"
-                name="reportedCases"
-                value={reportedCases}
-                onChange={e => setReportedCases(e.target.value)}
-                className="form-control"
-                id="data-reported-cases"
-                aria-labelledby="data-reported-cases"
-                placeholder="Enter No of Reported Cases"
-              />
-            </div>
-            <div className="form-group">
-              <label for="data-total-hospital-beds">Total Hospital Beds</label>
-              <input
-                type="number"
-                name="totalHospitalBeds"
-                value={totalHospitalBeds}
-                onChange={e => setTotalHospitalBeds(e.target.value)}
-                className="form-control"
-                id="data-total-hospital-beds"
-                aria-labelledby="data-total-hospital-beds"
-                placeholder="Enter No of Total Hospital Bed"
-              />
-            </div>
-            <div className="form-group">
-              <label for="data-period-type">Select Period Type</label>
-              <select
-                id="data-period-type"
-                className="form-control"
-                name="periodType"
-                value={periodType}
-                onChange={e => setPeriodType(e.target.value)}
-                aria-labelledby="data-period-type"
+          <div className="form-frame">
+            <form onSubmit={handleSubmit}>
+              <div className="form-group mb-4">
+                <label for="data-population">Total Population</label>
+                <input
+                  type="number"
+                  name="population"
+                  value={population}
+                  onChange={e => setPopulation(e.target.value)}
+                  className="form-control"
+                  id="data-population"
+                  aria-labelledby="data-population"
+                  // placeholder="Enter Population"
+                />
+              </div>
+              <div className="form-group mb-4">
+                <label for="data-time-to-elapse">Time to Elapse</label>
+                <input
+                  type="number"
+                  name="timeToElapse"
+                  value={timeToElapse}
+                  onChange={e => setTimeToElapse(e.target.value)}
+                  className="form-control"
+                  id="data-time-to-elapse"
+                  aria-labelledby="data-time-to-elapse"
+                  // placeholder="Enter Time to elapse"
+                />
+              </div>
+              <div className="form-group mb-4">
+                <label for="data-reported-cases">Reported Cases</label>
+                <input
+                  type="number"
+                  name="reportedCases"
+                  value={reportedCases}
+                  onChange={e => setReportedCases(e.target.value)}
+                  className="form-control"
+                  id="data-reported-cases"
+                  aria-labelledby="data-reported-cases"
+                  // placeholder="Enter No of Reported Cases"
+                />
+              </div>
+              <div className="form-group mb-4">
+                <label for="data-total-hospital-beds">
+                  Total Hospital Beds
+                </label>
+                <input
+                  type="number"
+                  name="totalHospitalBeds"
+                  value={totalHospitalBeds}
+                  onChange={e => setTotalHospitalBeds(e.target.value)}
+                  className="form-control"
+                  id="data-total-hospital-beds"
+                  aria-labelledby="data-total-hospital-beds"
+                  // placeholder="Enter No of Total Hospital Bed"
+                />
+              </div>
+              <div className="form-group mb-4">
+                <label for="data-period-type">Select Period Type</label>
+                <select
+                  id="data-period-type"
+                  className="form-control"
+                  name="periodType"
+                  value={periodType}
+                  onChange={e => setPeriodType(e.target.value)}
+                  aria-labelledby="data-period-type"
+                >
+                  <option>Choose...</option>
+                  <option value="days">Days</option>
+                  <option value="weeks">Weeks</option>
+                  <option value="months">Months</option>
+                </select>
+              </div>
+              <button
+                type="submit"
+                className="btn btn-md btn-primary"
+                id="data-go-estimate"
+                aria-labelledby="data-go-estimate"
               >
-                <option>Choose...</option>
-                <option value="days">Days</option>
-                <option value="weeks">Weeks</option>
-                <option value="months">Months</option>
-              </select>
-            </div>
-            <button
-              type="submit"
-              className="btn btn-primary"
-              id="data-go-estimate"
-              aria-labelledby="data-go-estimate"
-            >
-              Submit Data
-            </button>
-          </form>
+                Submit Data
+              </button>
+            </form>
+          </div>
         </div>
       </div>
     </div>
