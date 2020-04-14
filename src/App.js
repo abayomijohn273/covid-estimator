@@ -6,7 +6,7 @@ function App() {
   const [timeToElapse, setTimeToElapse] = useState('');
   const [reportedCases, setReportedCases] = useState('');
   const [totalHospitalBeds, setTotalHospitalBeds] = useState('');
-  const [periodType, setPeriodType] = useState('');
+  const [periodType, setPeriodType] = useState('day');
   const handleSubmit = e => {
     e.preventDefault();
     const data = {
@@ -102,7 +102,6 @@ function App() {
                     onChange={e => setPeriodType(e.target.value)}
                     aria-labelledby="data-period-type"
                   >
-                    <option>Choose...</option>
                     <option value="days">Days</option>
                     <option value="weeks">Weeks</option>
                     <option value="months">Months</option>
