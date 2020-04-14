@@ -39,6 +39,7 @@ function App() {
                   <input
                     type="number"
                     name="data-population"
+                    data-population={population}
                     value={population}
                     onChange={e => setPopulation(e.target.value)}
                     className="form-control"
@@ -52,6 +53,7 @@ function App() {
                   <input
                     type="number"
                     name="data-time-to-elapse"
+                    data-time-to-elapse={timeToElapse}
                     value={timeToElapse}
                     onChange={e => setTimeToElapse(e.target.value)}
                     className="form-control"
@@ -65,6 +67,7 @@ function App() {
                   <input
                     type="number"
                     name="data-reported-cases"
+                    data-reported-cases={reportedCases}
                     value={reportedCases}
                     onChange={e => setReportedCases(e.target.value)}
                     className="form-control"
@@ -80,6 +83,7 @@ function App() {
                   <input
                     type="number"
                     name="data-total-hospital-beds"
+                    data-total-hospital-beds={totalHospitalBeds}
                     value={totalHospitalBeds}
                     onChange={e => setTotalHospitalBeds(e.target.value)}
                     className="form-control"
@@ -93,7 +97,7 @@ function App() {
                   <select
                     id="data-period-type"
                     className="form-control"
-                    name="data-period-type"
+                    data-period-type={periodType}
                     value={periodType}
                     onChange={e => setPeriodType(e.target.value)}
                     aria-labelledby="data-period-type"
@@ -106,7 +110,7 @@ function App() {
                 </div>
                 <button
                   type="submit"
-                  name="data-go-estimate"
+                  data-go-estimate
                   className="btn btn-lg mb-4"
                   id="data-go-estimate"
                   aria-labelledby="data-go-estimate"
