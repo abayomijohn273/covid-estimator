@@ -38,7 +38,7 @@ function App() {
                   <label for="data-population">Total Population</label>
                   <input
                     type="number"
-                    name="population"
+                    name="data-population"
                     value={population}
                     onChange={e => setPopulation(e.target.value)}
                     className="form-control"
@@ -51,7 +51,7 @@ function App() {
                   <label for="data-time-to-elapse">Time to Elapse</label>
                   <input
                     type="number"
-                    name="timeToElapse"
+                    name="data-time-to-elapse"
                     value={timeToElapse}
                     onChange={e => setTimeToElapse(e.target.value)}
                     className="form-control"
@@ -64,7 +64,7 @@ function App() {
                   <label for="data-reported-cases">Reported Cases</label>
                   <input
                     type="number"
-                    name="reportedCases"
+                    name="data-reported-cases"
                     value={reportedCases}
                     onChange={e => setReportedCases(e.target.value)}
                     className="form-control"
@@ -79,7 +79,7 @@ function App() {
                   </label>
                   <input
                     type="number"
-                    name="totalHospitalBeds"
+                    name="data-total-hospital-beds"
                     value={totalHospitalBeds}
                     onChange={e => setTotalHospitalBeds(e.target.value)}
                     className="form-control"
@@ -93,7 +93,7 @@ function App() {
                   <select
                     id="data-period-type"
                     className="form-control"
-                    name="periodType"
+                    name="data-period-type"
                     value={periodType}
                     onChange={e => setPeriodType(e.target.value)}
                     aria-labelledby="data-period-type"
@@ -106,6 +106,7 @@ function App() {
                 </div>
                 <button
                   type="submit"
+                  name="data-go-estimate"
                   className="btn btn-lg mb-4"
                   id="data-go-estimate"
                   aria-labelledby="data-go-estimate"
